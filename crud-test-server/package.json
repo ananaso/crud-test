@@ -1,0 +1,24 @@
+{
+  "name": "crud-test-server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "knex migrate:latest && node ./bin/www",
+    "start-dev": "knex migrate:rollback && knex migrate:latest && nodemon ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^10.0.0",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "knex": "^0.95.11",
+    "morgan": "~1.9.1",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
