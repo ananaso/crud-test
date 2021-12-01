@@ -13,8 +13,6 @@ RUN npm install --silent
 # copy project files and folders to the current working directory (i.e. 'app' folder)
 COPY . .
 
-RUN chown node:node * && chmod 777 *
-
 # stop stupid Node crypto error thing
 ENV NODE_OPTIONS=--openssl-legacy-provider
 
